@@ -1,0 +1,39 @@
+
+* { box-sizing: border-box; }
+body { margin:0; font-family: Arial, Helvetica, sans-serif; color:#2b2b2b; background:#fff; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+
+.topbar { background:#f7c600; color:#000; }
+.topbar .container { display:flex; align-items:center; justify-content:space-between; padding:14px 16px; }
+.topbar h1 { margin:0; font-size:24px; }
+.topbar nav a { color:#000; text-decoration:none; margin-left:14px; font-weight:bold; }
+
+.hero { background:#111; color:#fff; padding:60px 0; text-align:center; }
+.hero .btn { margin:10px 8px 0 0; display:inline-block; padding:12px 20px; border-radius:10px; background:#f7c600; color:#000; text-decoration:none; font-weight:bold; }
+.hero .btn.outline { background:transparent; border:2px solid #f7c600; color:#f7c600; }
+.hero .btn.ghost { background:transparent; border:2px solid #333; color:#333; }
+
+.section { padding:50px 0; }
+.section.alt { background:#f7f7f7; }
+h3 { font-size:28px; margin:0 0 20px 0; text-align:center; }
+
+.gallery { display:flex; flex-wrap:wrap; gap:16px; justify-content:center; }
+.gallery img { width:320px; max-width:100%; border-radius:12px; box-shadow:0 3px 12px rgba(0,0,0,.15); }
+
+.cards { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:18px; }
+.card { background:#fff; border-radius:14px; padding:12px; box-shadow:0 6px 18px rgba(0,0,0,.08); }
+.card img { width:100%; border-radius:10px; display:block; }
+.card h4 { margin:10px 0 6px; font-size:20px; }
+.card p { margin:0 0 6px; color:#555; }
+
+.contact .btn { display:inline-block; margin:8px; padding:12px 20px; border-radius:10px; background:#f7c600; color:#000; text-decoration:none; font-weight:bold; }
+.contact .btn.outline { background:transparent; border:2px solid #f7c600; color:#000; }
+.contact .btn.ghost { background:transparent; border:2px solid #aaa; color:#333; }
+.contact .note { text-align:center; color:#666; margin-top:10px; }
+
+.footer { background:#111; color:#bbb; padding:18px 0; text-align:center; font-size:14px; }
+
+@media (max-width:600px){
+  .hero { padding:40px 0; }
+  .gallery img { width:100%; }
+}
