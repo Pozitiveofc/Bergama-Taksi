@@ -1,121 +1,82 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bergama Taksi</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background: #fff;
-      color: #333;
-    }
-    header {
-      background: #f7c600;
-      color: #000;
-      padding: 20px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #000;
-      font-weight: bold;
-    }
-    .hero {
-      text-align: center;
-      padding: 20px;
-    }
-    .hero img {
-      max-width: 100%;
-      border-radius: 12px;
-    }
-    .button {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 12px 25px;
-      background: #f7c600;
-      color: #000;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 8px;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .gallery {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
-    .gallery img {
-      width: 250px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-    .contact {
-      text-align: center;
-      background: #f7f7f7;
-      padding: 30px;
-      border-radius: 12px;
-    }
-    .contact a {
-      display: block;
-      margin: 10px 0;
-      font-size: 18px;
-      color: #000;
-      text-decoration: none;
-    }
-  </style>
+  <meta name="description" content="Bergama'da 7/24 güvenilir taksi. Akropol, Asklepion, Kızıl Avlu ziyaretleri ve şehir içi ulaşım." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>🚖 Bergama Taksi</h1>
-    <nav>
-      <a href="#hakkinda">Bergama</a>
-      <a href="#galeri">Galeri</a>
-      <a href="#iletisim">İletişim</a>
-    </nav>
+  <header class="topbar">
+    <div class="container">
+      <h1>🚖 Bergama Taksi</h1>
+      <nav>
+        <a href="#taxi">Taksimiz</a>
+        <a href="#history">Bergama'nın Tarihi</a>
+        <a href="#contact">İletişim</a>
+      </nav>
+    </div>
   </header>
 
-  <div class="hero">
-    <img src="taksi1.jpg" alt="Bergama Taksi">
-    <br>
-    <a href="tel:+905322399462" class="button">📞 Hemen Taksi Çağır</a>
-  </div>
-
-  <section id="hakkinda">
-    <h2>Bergama</h2>
-    <p>
-      Bergama, tarihi ve kültürel zenginlikleriyle Türkiye'nin Ege Bölgesi'nde bulunan bir ilçedir. 
-      Antik çağlardan bu yana önemli bir yerleşim merkezi olmuş, 
-      UNESCO Dünya Mirası Listesi'nde yer alan Akropol, Asklepion ve Kızıl Avlu gibi yapılarıyla ünlüdür.
-    </p>
-  </section>
-
-  <section id="galeri">
-    <h2>Galeri</h2>
-    <div class="gallery">
-      <img src="taksi1.jpg" alt="Taksi Fotoğrafı 1">
-      <img src="taksi2.jpg" alt="Taksi Fotoğrafı 2">
-      <img src="taksi3.jpg" alt="Taksi Fotoğrafı 3">
+  <section class="hero">
+    <div class="container">
+      <h2>Bergama'da güvenilir ve hızlı ulaşım</h2>
+      <p>Akropol, Asklepion ve Kızıl Avlu'ya konforlu transfer. Hemen arayın!</p>
+      <a class="btn" href="tel:+905322399462">📞 Hemen Taksi Çağır</a>
+      <a class="btn outline" target="_blank" href="https://wa.me/905322399462">💬 WhatsApp</a>
     </div>
   </section>
 
-  <section id="iletisim" class="contact">
-    <h2>İletişim</h2>
-    <a href="tel:+905322399462">📞 Telefon: 0 (532) 239 94 62</a>
-    <a href="https://wa.me/905322399462" target="_blank">💬 WhatsApp ile Mesaj Gönder</a>
-    <a href="https://maps.google.com/?q=Bergama,Izmir" target="_blank">📍 Google Haritada Yol Tarifi Al</a>
+  <section id="taxi" class="section">
+    <div class="container">
+      <h3>Taksimiz</h3>
+      <div class="gallery">
+        <img src="images/taksi1.jpg" alt="Bergama Taksi 1" />
+        <img src="images/taksi2.jpg" alt="Bergama Taksi 2" />
+        <img src="images/taksi3.jpg" alt="Bergama Taksi 3" />
+      </div>
+    </div>
   </section>
+
+  <section id="history" class="section alt">
+    <div class="container">
+      <h3>Bergama'nın Tarihi</h3>
+      <p>Bergama (Pergamon), Antik Çağ’ın en önemli kültür merkezlerinden biridir. Akropol, Asklepion ve Kızıl Avlu gibi yapılarıyla UNESCO Dünya Mirası’nda yer alır.</p>
+      <div class="cards">
+        <div class="card">
+          <img src="images/akropol.jpg" alt="Bergama Akropolü" />
+          <h4>Akropol</h4>
+          <p>Hellenistik dönemde tiyatro, kütüphane ve tapınaklarıyla ünlü tepe yerleşimi.</p>
+        </div>
+        <div class="card">
+          <img src="images/asklepion.jpg" alt="Asklepion" />
+          <h4>Asklepion</h4>
+          <p>Antik tıp merkezi; kutsal su, uyku odaları ve tiyatrosuyla bilinir.</p>
+        </div>
+        <div class="card">
+          <img src="images/kizilavlu.jpg" alt="Kızıl Avlu (Red Basilica)" />
+          <h4>Kızıl Avlu</h4>
+          <p>Roma döneminden kalma, kırmızı tuğlalarıyla dikkat çeken görkemli yapı.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container contact">
+      <h3>İletişim</h3>
+      <a class="btn" href="tel:+905322399462">📞 Telefon: 0 (532) 239 94 62</a>
+      <a class="btn outline" target="_blank" href="https://wa.me/905322399462">💬 WhatsApp ile Mesaj Gönder</a>
+      <a class="btn ghost" target="_blank" href="https://maps.google.com/?q=Bergama,Izmir">📍 Google Haritada Yol Tarifi</a>
+      <p class="note">7/24 hizmet. Bergama merkez ve çevre ilçeler.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Bergama Taksi • Tüm hakları saklıdır</p>
+    </div>
+  </footer>
 </body>
 </html>
